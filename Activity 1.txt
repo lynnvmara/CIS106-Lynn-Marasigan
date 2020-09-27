@@ -1,0 +1,17 @@
+Input
+     Get rice bag, measuring cup, and rice cooker
+     Plug in rice cooker to an electrical outlet
+     Turn on rice cooker
+     Open rice cooker
+     Open rice bag
+     Use measuring cup to measure x cups of rice
+     Pour into rice cooker
+     Fill the rice cooker with water
+     Close the rice cooker
+     Choose the "rice" setting
+
+Processing
+     Get to the result by following the aforementioned steps
+
+Output
+     Steamed rice
