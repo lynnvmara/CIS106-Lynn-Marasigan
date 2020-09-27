@@ -1,1 +1,3 @@
 # CIS106-Lynn-Marasigan
+
+Hello, my name is Lynn Marasigan. I'm taking CIS106 in order to earn an associate degree for science and transfer into a 4-year university where I'll major in actuarial sciences. I've always had an interest in computer programming. My interest first started in middle school when I came across a website called Scratch. The website is coding but with blocks instead of strings of text. Before this class, I never had time to learn programming languages by myself. Taking this class gives me the opportunity to learn something that I have an interest in while simutaneously being a stepping stone towards my degree.
