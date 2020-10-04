@@ -1,0 +1,28 @@
+Function Main
+    Declare Integer length
+    Declare Integer width
+    Declare Integer height
+    Declare Integer gallons
+    Declare Integer gallonPrice
+    Declare Integer squareFeet
+    
+    Output "What is the length of the room?"
+    Input length
+    Output "What is the width of the room?"
+    Input width
+    Output "What is the height of the room?"
+    Input height
+    Output "What is the cost per gallon?"
+    Input gallonPrice
+    Output "How many square feet does one gallon of paint cover?"
+    Input squareFeet
+    Output "Total area: " & (2 * length * (height + 2) * width * height)
+    Declare Integer totalArea
+    
+    Output "Enter total area."
+    Input totalArea
+    Output "Gallons of paint needed: " & (totalArea / squareFeet)
+    Output "Enter total gallons needed."
+    Input gallons
+    Output "Total cost: $" & (gallons * gallonPrice)
+End

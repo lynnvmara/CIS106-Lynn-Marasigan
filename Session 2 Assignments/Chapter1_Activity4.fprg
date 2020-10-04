@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lynn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-04 05:14:03 PM"/>
+        <attribute name="created" value="THlubjtMWU5OOzIwMjAtMTAtMDQ7MDU6MTE6NTcgUE07MjAxMA=="/>
+        <attribute name="edited" value="THlubjtMWU5OOzIwMjAtMTAtMDQ7MDU6MTQ6MDMgUE07MTsyMTEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="liter" type="Integer" array="False" size=""/>
+            <declare name="gallons" type="Integer" array="False" size=""/>
+            <assign variable="liter" expression="3.7854"/>
+            <output expression="&quot;How many gallons?&quot;" newline="True"/>
+            <input variable="gallons"/>
+            <output expression="(gallons * liter) &amp; &quot; liters&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

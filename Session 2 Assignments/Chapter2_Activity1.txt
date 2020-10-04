@@ -1,0 +1,12 @@
+Function Main
+    Declare Integer hours
+    Declare Integer rate
+    
+    Output "How many hours?"
+    Input hours
+    Output "How much per hour?"
+    Input rate
+    Output "Weekly gross pay: $" & (hours * rate)
+    Output "Monthly gross pay: $" & (hours * rate * 4)
+    Output "Annual gross pay: $" & (hours * rate * 52)
+End
