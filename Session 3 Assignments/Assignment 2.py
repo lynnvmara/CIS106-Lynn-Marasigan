@@ -1,0 +1,5 @@
+print ("What is the length of the rectangle?")
+length = int(input())
+print ("What is the width of the rectangle?")
+width = int(input())
+print ("The area of the rectangle is " + str(length * width) + " and the perimeter of the rectangle is " + str(2 * length + 2 * width) + ".")

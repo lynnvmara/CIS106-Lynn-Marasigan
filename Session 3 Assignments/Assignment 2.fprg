@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lynn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-11 07:05:04 PM"/>
+        <attribute name="created" value="THlubjtMWU5OOzIwMjAtMTAtMTE7MDY6NTc6MjUgUE07MjAxNA=="/>
+        <attribute name="edited" value="THlubjtMWU5OOzIwMjAtMTAtMTE7MDc6MDU6MDQgUE07MTsyMTEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="length" type="Integer" array="False" size=""/>
+            <declare name="width" type="Integer" array="False" size=""/>
+            <output expression="&quot;What is the length of the rectangle?&quot;" newline="True"/>
+            <input variable="length"/>
+            <output expression="&quot;What is the width of the rectangle?&quot;" newline="True"/>
+            <input variable="width"/>
+            <output expression="&quot;The area of the rectangle is &quot; &amp; (length * width) &amp; &quot; and the perimeter of the rectangle is &quot; &amp; ((2 * length) + (2 * width)) &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
