@@ -1,0 +1,13 @@
+Function Main
+    Declare String name
+    Declare Integer score1
+    Declare Integer score2
+    
+    Output "What is your last name?"
+    Input name
+    Output "What is the first exam score?"
+    Input score1
+    Output "What is the second exam score?"
+    Input score2
+    Output name & "'s " & "total score, with a first exam score of " & score1 & " worth 40% and a second exam score of " & score2 & " worth 60%, is " & (score1 * .4) + (score2 * .6) & "%."
+End

@@ -1,0 +1,31 @@
+Function Main
+    Declare Integer ticketNumber
+    Declare Integer ticketCost
+    Declare Integer total
+    
+    Assign ticketNumber = getNumber()
+    Assign ticketCost = getCost()
+    Assign total = ticketNumber * ticketCost
+    Call computeTax(total)
+End
+
+Function getNumber
+    Declare Integer ticketNumber
+    
+    Output "How many tickets?"
+    Input ticketNumber
+Return Integer ticketNumber
+
+Function getCost
+    Declare Integer ticketCost
+    
+    Output "What is the cost per ticket?"
+    Input ticketCost
+Return Integer ticketCost
+
+Function computeTax (Integer total)
+    Declare Integer ticketNumber
+    Declare Integer ticketCost
+    
+    Output "For " & ticketNumber & " tickets worth $" & ticketCost & " each with a 7% tax, the total amount is $" & total
+End

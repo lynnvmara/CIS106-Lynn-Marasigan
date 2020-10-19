@@ -1,0 +1,12 @@
+Problem: A simple addition calculator.
+
+Function Main
+    Declare Integer number1
+    Declare Integer number2
+    
+    Output "What is the first number?"
+    Input number1
+    Output "What is the second number?"
+    Input number2
+    Output number1 & " + " & number2 & " = " & (number1 + number2)
+End

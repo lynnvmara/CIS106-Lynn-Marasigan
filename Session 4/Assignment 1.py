@@ -1,0 +1,5 @@
+print ("What is the first number?")
+number1 = int(input())
+print ("What is the second number?")
+number2 = int(input())
+print (str(number1) + " + " + str(number2) + " = " + str(number1 + number2))
