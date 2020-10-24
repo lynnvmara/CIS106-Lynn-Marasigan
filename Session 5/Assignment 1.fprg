@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lynn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-24 04:20:07 PM"/>
+        <attribute name="created" value="THlubjtMWU5OOzIwMjAtMTAtMjQ7MDM6NDU6MDYgUE07MjAxMQ=="/>
+        <attribute name="edited" value="THlubjtMWU5OOzIwMjAtMTAtMjQ7MDQ6MjA6MDcgUE07MTsyMTE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Integer" array="False" size=""/>
+            <declare name="price" type="Integer" array="False" size=""/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <assign variable="quantity" expression="itemQuantity()"/>
+            <assign variable="price" expression="itemPrice()"/>
+            <assign variable="total" expression="quantity * price"/>
+            <call expression="computeTax(total)"/>
+        </body>
+    </function>
+    <function name="computeTax" type="None" variable="">
+        <parameters>
+            <parameter name="total" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="quantity" type="Integer" array="False" size=""/>
+            <declare name="price" type="Integer" array="False" size=""/>
+            <assign variable="quantity" expression="itemQuantity()"/>
+            <assign variable="price" expression="itemPrice()"/>
+            <output expression="&quot;The extended price (quantity x unit price) is $&quot; &amp; total &amp; &quot;. The extended price plus a 7% tax is $&quot; &amp; (total * 1.07) &amp; &quot;.&quot;" newline="True"/>
+            <if expression="total &gt;= 100">
+                <then>
+                    <output expression="&quot;This order has a shipping fee of $0. The total cost (extended price + tax + shipping) for &quot; &amp; quantity &amp; &quot; items for $&quot; &amp; price &amp; &quot; each is $&quot; &amp; (total * 1.07) &amp; &quot;.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;This order has a shipping fee of $&quot; &amp; (total * .1) &amp; &quot; which is 10% of the cost before shipping. The total cost (extended price + tax + shipping) for &quot; &amp; quantity &amp; &quot; items for $&quot; &amp; price &amp; &quot; each is $&quot; &amp; (total + (total * .07) + (total * .1)) &amp; &quot;.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="itemPrice" type="Integer" variable="price">
+        <parameters/>
+        <body>
+            <declare name="price" type="Integer" array="False" size=""/>
+            <output expression="&quot;What is the unit price (price per item)?&quot;" newline="True"/>
+            <input variable="price"/>
+        </body>
+    </function>
+    <function name="itemQuantity" type="Integer" variable="quantity">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many items were ordered?&quot;" newline="True"/>
+            <input variable="quantity"/>
+        </body>
+    </function>
+</flowgorithm>
