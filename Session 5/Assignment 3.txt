@@ -1,0 +1,17 @@
+Function Main
+    Declare String name
+    Declare Integer hours
+    Declare Integer rate
+    
+    Output "What is your last name?"
+    Input name
+    Output "How many hours?"
+    Input hours
+    Output "What is the rate per hour?"
+    Input rate
+    If hours > 40
+        Output name & "'s gross pay is $" & ((40 * rate) + ((hours - 40) * (rate * 1.5))) & " for $" & rate & " per hour over " & hours & " hours."
+    False:
+        Output name & "'s gross pay is $" & (hours * rate) & " for $" & rate & " per hour over " & hours & " hours."
+    End
+End
