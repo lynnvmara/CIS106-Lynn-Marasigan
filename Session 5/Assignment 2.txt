@@ -1,0 +1,20 @@
+Function Main
+    Declare String widget
+    Declare Integer price
+    Declare Integer quantity
+    
+    Output "Is the widget A or B?"
+    Input widget
+    If widget == "A"
+        Assign price = 10
+        Assign widget = "A"
+        Output "The price per widget is $10.00."
+    False:
+        Assign price = 20
+        Assign widget = "B"
+        Output "The price per widget is $20.00."
+    End
+    Output "How many widgets?"
+    Input quantity
+    Output "The total price for " & quantity & " units of widget " & widget & " costing $" & price & " each is $" & (quantity * price) & "."
+End
