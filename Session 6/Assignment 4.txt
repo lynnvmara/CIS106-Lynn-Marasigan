@@ -1,0 +1,19 @@
+Function Main
+    Declare Integer term
+    Declare Integer rate
+    
+    Output "What is the term in years?"
+    Input term
+    If term == 5 or term == 10
+        Assign rate = 2
+        Output "The interest rate for a " & term & " year term is " & rate & "%."
+    False:
+        If term == 1 or term == 2 or term == 3
+            Assign rate = 1
+            Output "The interest rate for a " & term & " year term is " & rate & "%."
+        False:
+            Assign rate = .5
+            Output "The interest rate for a " & term & " year term is " & rate & "%."
+        End
+    End
+End
