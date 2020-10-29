@@ -1,0 +1,53 @@
+Function Main
+    Declare String name
+    Declare String code
+    Declare Integer years
+    Declare Integer bonus
+    
+    Assign name = lastName()
+    Assign code = jobCode()
+    Assign years = serviceYears()
+    If code == "A"
+        If years > 10
+            Assign bonus = 10000
+            Output name & "'s employee bonus is $" & bonus & "."
+        False:
+            If years >= 5
+                Assign bonus = 8000
+                Output name & "'s employee bonus is $" & bonus & "."
+            False:
+                Assign bonus = 5000
+                Output name & "'s employee bonus is $" & bonus & "."
+            End
+        End
+    False:
+        If years > 15 and code == "B"
+            Assign bonus = 9000
+            Output name & "'s employee bonus is $" & bonus & "."
+        False:
+            Assign bonus = 5000
+            Output name & "'s employee bonus is $" & bonus & "."
+        End
+    End
+End
+
+Function jobCode
+    Declare String code
+    
+    Output "What is your job code?"
+    Input code
+Return String code
+
+Function lastName
+    Declare String name
+    
+    Output "What is your last name?"
+    Input name
+Return String name
+
+Function serviceYears
+    Declare Integer years
+    
+    Output "How many years of service?"
+    Input years
+Return Integer years

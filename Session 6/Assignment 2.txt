@@ -1,0 +1,19 @@
+Function Main
+    Declare Integer quantity
+    Declare Integer price
+    
+    Output "How many items were ordered?"
+    Input quantity
+    If quantity > 1000
+        Assign price = 8
+        Output "The cost per item is $8.00. For " & quantity & " items, the extended price is $" & (quantity * price) & "."
+    False:
+        If quantity >= 500
+            Assign price = 10
+            Output "The cost per item is $10.00. For " & quantity & " items, the extended price is $" & (quantity * price) & "."
+        False:
+            Assign price = 12
+            Output "The cost per item is $12.00. For " & quantity & " items, the extended price is $" & (quantity * price) & "."
+        End
+    End
+End

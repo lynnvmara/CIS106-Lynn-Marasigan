@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lynn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-28 08:49:58 PM"/>
+        <attribute name="created" value="THlubjtMWU5OOzIwMjAtMTAtMjg7MDg6NDM6MzIgUE07MjAxNw=="/>
+        <attribute name="edited" value="THlubjtMWU5OOzIwMjAtMTAtMjg7MDg6NDk6NTggUE07MjsyMTQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="years" type="Integer" array="False" size=""/>
+            <declare name="award" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many years of service?&quot;" newline="True"/>
+            <input variable="years"/>
+            <if expression="years &gt; 10">
+                <then>
+                    <output expression="&quot;Service level award: 1,000&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="years &gt;= 5">
+                        <then>
+                            <output expression="&quot;Service level award: 500&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Service level award: 100&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
