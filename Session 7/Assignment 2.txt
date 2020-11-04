@@ -1,0 +1,16 @@
+Function Main
+    Declare Integer start
+    Declare Integer stop
+    Declare Integer increment
+    
+    Output "What is the starting value?"
+    Input start
+    Output "What is the stop value?"
+    Input stop
+    Output "What is the increment value?"
+    Input increment
+    While start <= stop
+        Output start
+        Assign start = start + increment
+    End
+End

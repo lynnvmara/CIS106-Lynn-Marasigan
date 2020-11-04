@@ -1,0 +1,21 @@
+Function Main
+    Declare String answer
+    
+    Output "Do you want to run the program, y or n?"
+    Input answer
+    While answer == "y" or answer == "Y"
+        Declare String name
+        Declare Integer score1
+        Declare Integer score2
+        
+        Output "What is your last name?"
+        Input name
+        Output "What is your first exam score (in percent)?"
+        Input score1
+        Output "What is your second exam score (in percent)?"
+        Input score2
+        Output name & "'s exam score average is " & ((score1 + score2)/2) & "%."
+        Output "Do you want to run the program again, y or n?"
+        Input answer
+    End
+End

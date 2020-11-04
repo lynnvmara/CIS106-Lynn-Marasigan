@@ -1,0 +1,12 @@
+print("Do you want to run the program, y or n?")
+answer = input()
+while answer == "y" or answer == "Y":
+  print("What is your last name?")
+  name = input()
+  print("What is your first exam score?")
+  score1 = int(input())
+  print("What is your second exam score?")
+  score2 = int(input())
+  print(name + "'s exam score average is " + str((score1 + score2)/2) + "%.")
+  print("Would you like to run the program again, y or n?")
+  answer = input()
